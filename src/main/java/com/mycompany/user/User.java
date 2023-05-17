@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name="users")
 public class User {
+
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
  private Integer id;
@@ -56,6 +58,17 @@ private String lastName;
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }
 
