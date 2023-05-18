@@ -59,7 +59,7 @@ private String lastName;
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
+private boolean enable;
     @Override
     public String toString() {
         return "User{" +
@@ -69,6 +69,14 @@ private String lastName;
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    public boolean isEnable() {
+        return enable;
+    }
+
+    public void setEnable(boolean enable) {
+        this.enable = enable;
     }
 }
 
